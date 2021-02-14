@@ -1,10 +1,10 @@
 package it.univpm.progettooop.exception;
 
 /**
- * <b>Eccezione</b> che avvisa quando il body della richiesta di post su filtri è vuoto
- * @author Beci Paolo
- * @author Izzi Giuseppe
- * @author Grieco Emilio Joseph
+ * <b>Eccezione</b> thi is exception
+ * @author kamdem defo patrice
+ * @author 
+
  */
 public class BodyIsEmptyException extends Exception{
 	private static final long serialVersionUID = 1L;

@@ -18,13 +18,14 @@ public class Download {
 	public static Vector<Promoter> callTicketmaster() throws NoDataException {
 		
 		Vector<Promoter> pVect = new Vector<Promoter>();
+		ParsingDownload pD = new ParsingDownload();
 		
 		try {
-			URL urlDownload = new URL("https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=cQqAQpOj6B5R1kGsPqmNsOHbsJ13PvSI");
+			URL urlDownload = new URL("https://app.ticketmaster.com/discovery/v2/events.json?countryCode=AU&apikey=cQqAQpOj6B5R1kGsPqmNsOHbsJ13PvSI");
 			HttpURLConnection connessione = (HttpURLConnection) urlDownload.openConnection();
 			BufferedReader input = new BufferedReader(new InputStreamReader(connessione.getInputStream()));
 			String s = input.readLine();
-			pVect = ParsingDownload.parse(s);
+			pVect = pD.parse(s);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

@@ -1,10 +1,8 @@
 package it.univpm.progettooop.exception;
 
 /**
- * <b>Eccezione</b> che avvisa quando non sono presenti dati in memoria
- * @author Beci Paolo
- * @author Izzi Giuseppe
- * @author Grieco Emilio Joseph
+ * <b>Eccezione</b> che avvisa quando non sono presenti
+ * @author kamdem defo patrice 
  */
 public class NoDataException extends Exception{
 
